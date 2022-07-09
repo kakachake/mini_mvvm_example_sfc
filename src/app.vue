@@ -2,7 +2,7 @@
   <div>
     {{ count }}
     <button z-on:click="add">click</button>
-    <button z-on:click="handleClick">show</button>
+    <button z-on:click="handleClick">{{ show ? "hide" : "show" }}</button>
     <Sfc z-if="show" z-bind:baz="count"></Sfc>
 
     <!--  -->
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Sfc from "./sfc.vue";
+import Sfc from "./components/sfc.vue";
 export default {
   components: {
     Sfc,

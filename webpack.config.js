@@ -4,12 +4,11 @@ module.exports = (env = {}) => {
   const isProd = env.prod;
   return {
     mode: isProd ? "production" : "development",
-    entry: path.resolve(__dirname, "./main.js"),
+    entry: path.resolve(__dirname, "./src/main.js"),
     output: {
       filename: "[name].js",
       path: __dirname + "/dist",
     },
-    target: "web",
     module: {
       rules: [
         {

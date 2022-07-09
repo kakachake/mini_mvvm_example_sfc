@@ -2,7 +2,7 @@
   <div class="sfc">
     <h1>这是组件内部</h1>
     <p>{{ foo }}</p>
-    <button z-on:click="inc">{{ count }}</button>
+    <button z-on:click="inc">内部计数器: {{ count }}</button>
     <div>父组件传递的props:{{ baz }}</div>
     <Sfc></Sfc>
   </div>
