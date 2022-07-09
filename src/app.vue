@@ -13,6 +13,7 @@
         >npx zvm-cli create myproject
       </code>
     </div>
+    <a target="_blank" href="https://mini-zvm-doc.vercel.app/">zvm参考文档</a>
     <!--  -->
   </div>
 </template>
