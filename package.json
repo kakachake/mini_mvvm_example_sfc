@@ -19,7 +19,7 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
-    "mini-zvm": "^0.0.5",
+    "mini-zvm": "^0.1.0",
     "zvm-loader": "^0.0.1"
   }
 }

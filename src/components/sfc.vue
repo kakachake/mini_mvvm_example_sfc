@@ -1,10 +1,12 @@
 <template>
   <div class="sfc">
-    <h1>这是组件内部</h1>
+    <h2>这是子组件</h2>
     <p>{{ foo }}</p>
-    <button z-on:click="inc">内部计数器: {{ count }}</button>
-    <div>父组件传递的props:{{ baz }}</div>
-    <Sfc></Sfc>
+    <button z-on:click="inc">add：{{ count }}</button>
+    <button z-on:click="emitClick">
+      使用emit向父组件响应，可以传参，父组件的count+= {{ count }}
+    </button>
+    <div>props:{{ baz }}</div>
   </div>
 </template>
 
@@ -33,6 +35,10 @@ export default {
     inc() {
       console.log(111);
       this.count++;
+    },
+    emitClick() {
+      console.log(111);
+      this.$emit("sfcclick", this.count);
     },
   },
 };
